@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio 2031</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+
+        .banner {
+            background: linear-gradient(135deg, #38bdf8, #2563eb);
+            padding: 25px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+
+        .profile-text {
+            color: white;
+        }
+
+        .profile-text h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .profile-text p {
+            font-size: 18px;
+        }
+
+
+        .main {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 25%;
+            background: #111827;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            background: #1f2937;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: #3b82f6;
+            transform: translateX(5px);
+        }
+
+        .content {
+            width: 75%;
+            background: #1e293b;
+            color: white;
+            padding: 25px;
+            min-height: 500px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+
+        .footer {
+            background: #06b6d4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 0 0 15px 15px;
+        }
+
+
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .content {
+                width: 100%;
+            }
+
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-text h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="banner">
+            <div class="profile-header">
+                <img src="aji.jpeg" alt="Foto Profil" class="profile-img">
+
+                <div class="profile-text">
+                    <h1><b>Adji Bastian</b></h1>
+                    <p>Developer & System Analyst</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+
+            <div class="sidebar">
+                <a href="#" onclick="showPage('profil')">👤 Profil</a>
+                <a href="#" onclick="showPage('pendidikan')">🎓 Riwayat Pendidikan</a>
+                <a href="#" onclick="showPage('organisasi')">🏆 Riwayat Organisasi</a>
+                <a href="#" onclick="showPage('pekerjaan')">💼 Riwayat Pekerjaan</a>
+                <a href="#" onclick="showPage('karya')">🚀 Karya Tulis / Produk</a>
+            </div>
+            <div class="content">
+
+                <div id="profil" class="page active">
+                    <h2>👤 Profil</h2>
+
+                    <p>Nama saya Adji Bastian saya lahir pada 25 Maret 2006 saya tinggal di Jambi kec. Maro sebo, Kab.
+                        Muara Jambi.
+                        Saya Seorang profesional teknologi yang berpengalaman dalam membangun ekosistem game
+                        berskala besar dari tahap konsepsi hingga deployment. Sebagai Game Developer dan System Analyst,
+                        saya memadukan estetika visual kelas atas dengan arsitektur sistem yang efisien.
+                        Terbukti sukses dalam merancang, mengembangkan, dan memelihara aplikasi game yang melayani
+                        ribuan pengguna aktif. Fokus utama saya adalah menciptakan performa sistem yang stabil dan
+                        responsif melalui analisis data yang tajam serta arsitektur kode yang terstruktur.
+                    </p>
+                    </ul>
+                </div>
+
+                <div id="pendidikan" class="page">
+                    <h2>🎓 Riwayat Pendidikan</h2>
+
+                    <ul>
+                        Saya mulai pendidikan dari SD 65 Desa Baru, kemudian saya melanjutkan pendidikan di ponpes
+                        Sa'adatuddaren,
+                        dan lanjut lagi di pendidikan Man 1 Kota Jambi,
+                        lalu setelah saya menyelesaikan pendidikan saya lanjut kuliah di UIN STS Jambi (S1)
+                        Prodi Sistem informasi untuk memperdalam pengetahuan saya dan mengembangkan skil saya
+                    </ul>
+                </div>
+
+                <div id="organisasi" class="page">
+                    <h2>🏆 Riwayat Organisasi</h2>
+
+                    <ul>
+                        selama pendidikan saya cuma ikut organisasi dari masa SMA dan saya mengikuti OSIS
+                        dan menjalankan tugas sebagai OSIS dan selama di OSIS saya belajar banyak hal seperti pentingnya
+                        di siplin,
+                        dan bertanggung jawab, dan berkomunikasi yg baik
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="pekerjaan" class="page">
+                    <h2>💼 Riwayat Pekerjaan</h2>
+
+                    <ul>
+                        <li>Senior Game Developer & Systems Analyst</li>
+                        <li>Core Development: Mengembangkan logika inti permainan dan mekanik sistem menggunakan
+                            teknologi terkini.</li>
+                        <li>Systems Analysis: Mengoptimalkan arsitektur database untuk menekan latensi serta memastikan
+                            uptime sistem maksimal.</li>
+                        <li>Visual Optimization: Mengelola aset visual berukuran besar dan melakukan kompresi cerdas
+                            agar permainan
+                            tetap optimal di berbagai perangkat tanpa mengorbankan kualitas.</li>
+                        <li>Troubleshooting: Mengidentifikasi dan menyelesaikan bottleneck sistem
+                            secara real-time untuk menjaga pengalaman bermain tetap lancar.</li>
+                    </ul>
+                </div>
+
+                <div id="karya" class="page">
+                    <h2>🚀 Karya Tulis / Produk</h2>
+
+                    <ul>
+                        <li>Judul Proyek: "Aetheria Saga"</li>
+                        <li>Deskripsi: Massive Multiplayer Action RPG dengan 50.000+ pengguna aktif bulanan.</li>
+                        <li>Pencapaian: Merancang sistem optimasi grafis resolusi tinggi agar berjalan mulus di
+                            perangkat mid-range
+                            serta membangun arsitektur server-side yang mampu menangani ribuan pemain dalam satu
+                            instance.</li>
+                        <li>Dokumen Teknis: "Optimasi Skalabilitas Sistem pada Game Berbasis Aset Besar"</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2031 Adji Bastian
+        </div>
+
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+
+            pages.forEach(function (page) {
+                page.classList.remove('active');
+            });
+
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
